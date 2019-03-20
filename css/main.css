@@ -16,6 +16,10 @@ html {
     line-height: 1.4;
 }
 
+body{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -97,15 +101,132 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   header{
+     justify-content: space-around;
+   }
+
+   .main_nav{
+        background-color: #012038;
+        width: 100%;
+       height:100px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+      }
+
+      #MainNav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90vw;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+        font-size: 26px;
+        color: #fff;
+      }
+
+      #MainNav ul{
+        display: flex;
+        padding: 15px;
+        list-style-type: none;
+      }
+
+      #MainNav ul li{
+        padding: 15px;
+      }
+
+      #MainNav ul li a{
+        color: #fff;
+        text-decoration: none;
+      }
+
+      #MainNav ul li a:visited{
+        color: #fff;
+      }
+
+      #MainNav ul li a:hover{
+        text-decoration: underline;
+      }
+
+      .HeroSection{
+        background-image: url('../img/code.png');
+        width: 100%;
+        height: 642px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+      }
+
+      h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 72px;
+        color: #EF672D;
+      }
+
+      h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        text-align: center;
+        margin: auto;
+        width: 500px;
+        top: 894px;
+      }
+
+
+      .MainContent p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+        width: 324px;
+        top: 959px;
+        padding-left: 61%;
+      }
+
+      .MainContent h2{
+          padding-left: 55%;
+      }
+
+.SpeakerContent p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  width: 500px;
+  margin-left: 50px;
+}
 
 
 
+    footer{
+        height: 176px;
+        background-color: #035563;
+        color: #fff;
+        width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+      }
 
 
 
+      .facebook{
+        position: absolute;
+        padding-left: 80%;
+      }
 
-
-
+      .twitter{
+        position: absolute;
+        padding-left: 85%;
+      }
 
 
 
