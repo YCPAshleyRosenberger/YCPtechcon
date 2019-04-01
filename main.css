@@ -179,6 +179,7 @@ textarea {
         top: 894px;
       }
 
+/* Index */
 
       .MainContent p{
         display: flex;
@@ -194,6 +195,33 @@ textarea {
       .MainContent h2{
           padding-left: 55%;
       }
+
+      /* End Index*/
+      /* Speaker Page */
+
+.speaker_headshot img{
+  width: 280px;
+  height: 280px;
+justify-content: center;
+margin: 10px;
+transition: all .2s ease-in-out;
+}
+
+.speaker_headshot img:hover { transform: scale(1.1); }
+
+.speaker_headshot{
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.speaker_headshot h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Speaker Spotlight */
 
@@ -241,13 +269,23 @@ textarea {
   margin: auto;
 }
 
+.sponsor_content h1{
+  margin: 0px;
+}
+
 .sponsor_content p{
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 18px;
   text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 50px;
 }
+
+/* End Sponsor Spotlight */
+/* Footer */
 
     footer{
         height: 176px;
