@@ -202,9 +202,9 @@ textarea {
 .speaker_headshot img{
   width: 280px;
   height: 280px;
-justify-content: center;
-margin: 10px;
-transition: all .2s ease-in-out;
+  justify-content: center;
+  margin: 10px;
+  transition: all .2s ease-in-out;
 }
 
 .speaker_headshot img:hover { transform: scale(1.1); }
