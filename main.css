@@ -214,6 +214,7 @@ textarea {
   flex-wrap: wrap;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 20px;
 }
 
@@ -260,6 +261,28 @@ textarea {
 }
 
 /* End Speaker Spotlight */
+/* Sponsor Page */
+
+.sponsors img{
+  width: auto;
+  height: 180px;
+  justify-content: center;
+  margin: 15px;
+  transition: all .2s ease-in-out;
+}
+
+.sponsors img:hover { transform: scale(1.1); }
+
+.sponsors{
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* End Sponsor Page */
 /* Sponsor Spotlight */
 
 .sponsor_content img{
@@ -267,6 +290,7 @@ textarea {
   justify-content: center;
   align-items: center;
   margin: auto;
+  padding: 50px;
 }
 
 .sponsor_content h1{
