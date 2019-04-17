@@ -197,6 +197,24 @@ textarea {
       }
 
       /* End Index*/
+      /* About Page */
+
+.about p{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.about img{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+      /* End About Page */
       /* Speaker Page */
 
 .speaker_headshot img{
@@ -309,6 +327,46 @@ textarea {
 }
 
 /* End Sponsor Spotlight */
+/* Legal Page*/
+
+div.conduct_policy{
+  width: 900px;
+  height: 300px;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  border-style: solid;
+  border-color: grey;
+  margin-left: 23%;
+}
+
+div.private_policy{
+  width: 900px;
+  height: 300px;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  border-style: solid;
+  border-color: grey;
+  margin-left: 23%;
+  margin-bottom: 100px;
+}
+
+/* End Legal Page */
+/* Register Page */
+
+.register_pass{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-color: black;
+}
+
+/* End Register Page */
+
 /* Footer */
 
     footer{
