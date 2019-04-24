@@ -361,11 +361,50 @@ div.private_policy{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 500px;
   border-style: solid;
   border-color: black;
+  margin: 10px;
+
+}
+
+.register_info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  border-style: solid;
+  border-color: black;
+  margin: 10px;
 }
 
 /* End Register Page */
+/* Schedule Page */
+
+.schedule_box p{
+  display: flex;
+  justify-content: left;
+  padding-left: 40px;
+  align-items: center;
+  width: 500px;
+  height: 80px;
+  border-style: solid;
+  border-color: #EF672D;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.schedule_box h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+}
+
+
+
+/* End Schedule Page */
+
 
 /* Footer */
 
