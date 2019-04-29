@@ -381,23 +381,76 @@ div.private_policy{
 /* End Register Page */
 /* Schedule Page */
 
+.schedule_days{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+#schedule_days{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  font-size: 26px;
+  color: #000;
+}
+
+#schedule_days ul{
+  display: flex;
+  padding: 15px;
+  list-style-type: none;
+}
+
+#schedule_days ul li{
+  padding: 15px;
+}
+
+#schedule_days ul li a{
+  color: #000;
+  text-decoration: none;
+}
+
+#schedule_days ul li a:visited{
+  color: #000;
+}
+
+#schedule_days ul li a:hover{
+  text-decoration: none;
+}
+
+.center_schedule{
+width: 80%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin: auto;
+}
+
+.schedule_box{
+  height: 35px;
+  overflow: hidden;
+  margin: 5%;
+border: #EF672D solid 2px;
+width: 50%;
+}
+
 .schedule_box p{
   display: flex;
   justify-content: left;
-  padding-left: 40px;
-  align-items: center;
-  width: 500px;
-  height: 80px;
-  border-style: solid;
-  border-color: #EF672D;
+  align-items: top;
   margin: auto;
   margin-bottom: 40px;
+  position: relative;
 }
 
 .schedule_box h3{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: top;
   font-weight: normal;
 }
 
