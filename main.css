@@ -422,28 +422,39 @@ div.private_policy{
 }
 
 .center_schedule{
-width: 80%;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
 }
 
 .schedule_box{
   height: 35px;
   overflow: hidden;
   margin: 5%;
-border: #EF672D solid 2px;
-width: 50%;
+  border: #EF672D solid 2px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.smalldesc {
+  height: 35px;
+  overflow:hidden;
+	border:1px solid #EF672D;
+}
+.bigdesc {
+  height: auto;
 }
 
 .schedule_box p{
   display: flex;
   justify-content: left;
   align-items: top;
-  margin: auto;
-  margin-bottom: 40px;
+  margin: 15px;
   position: relative;
 }
 
@@ -452,8 +463,17 @@ width: 50%;
   justify-content: center;
   align-items: top;
   font-weight: normal;
+  margin-top: 2px;
 }
 
+.chevron{
+  position: relative;
+  right: -30px;
+}
+
+.chevron img{
+  width: 42%;
+}
 
 
 /* End Schedule Page */
@@ -466,9 +486,9 @@ width: 50%;
         background-color: #035563;
         color: #fff;
         width: 100%;
-       display: flex;
-       justify-content: center;
-       align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
 
@@ -574,6 +594,68 @@ width: 50%;
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+   @media screen and (max-width: 1280px) {
+       /* Style adjustments for viewports that meet the condition */
+
+
+
+   }
+
+   @media screen and (max-width: 1024px) {
+       /* Style adjustments for viewports that meet the condition */
+
+
+   }
+
+   @media screen and (max-width: 768px) {
+       /* Style adjustments for viewports that meet the condition */
+
+h1{
+  font-size: 60px;
+}
+/* Speaker Page */
+
+.speaker_headshot img{
+  width: 207px;
+  height: 207px;
+}
+
+/*Legal Page*/
+      div.conduct_policy{
+         width: auto;
+         height: 300px;
+         overflow-y: visible;
+         display: flex;
+         justify-content: center;
+         align-items: top;
+         border-style: none;
+         margin:  0px 70px 0px 70px;
+       }
+
+       div.private_policy{
+         width: auto;
+         height: 300px;
+         overflow-y: visible;
+         display: flex;
+         justify-content: center;
+         align-items: top;
+         border-style: none;
+         margin:  100px 70px 70px 70px;
+       }
+
+
+
+    @media screen and (max-width: 375px) {
+    /* Style adjustments for viewports that meet the condition */
+
+    /* Speaker Page */
+
+    .speaker_headshot img{
+      width: 147px;
+      height: 147px;
+    }
+
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
