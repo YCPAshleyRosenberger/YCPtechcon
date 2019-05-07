@@ -149,6 +149,16 @@ textarea {
         text-decoration: underline;
       }
 
+      .button {
+        background-color: #EF672D;
+        border-radius: 25px;
+        padding: 5px 15px;
+        border: none;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+      }
+
       .HeroSection{
         background-image: url('../img/code.png');
         width: 100%;
@@ -186,14 +196,23 @@ textarea {
         align-items: center;
         justify-content: center;
         font-size: 18px;
-        text-align: center;
         width: 324px;
-        top: 959px;
-        padding-left: 61%;
+        float: right;
+        margin-right: 70px;
+        margin-top: 50px;
       }
 
       .MainContent h2{
-          padding-left: 55%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .MainContent img{
+        margin-left: 70px;
+        margin-right: 0;
+        margin-top: 50px;
+        margin-bottom: 100px;
       }
 
       /* End Index*/
@@ -357,6 +376,18 @@ div.private_policy{
 /* End Legal Page */
 /* Register Page */
 
+.price{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 170px;
+}
+
+
+
 .register_pass{
   display: flex;
   justify-content: center;
@@ -365,17 +396,72 @@ div.private_policy{
   border-style: solid;
   border-color: black;
   margin: 10px;
-
 }
 
-.register_info{
+.expiration{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  float: right;
+  margin-right: 235px;
+}
+
+.submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  margin-top: 30px;
+  margin-right: -215px;
+}
+
+input[type=Submit]{
+  background-color: #EF672D;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+  }
+
+input[type=text]{
+border-style: solid;
+border-width: 3px;
+width: 500px;
+height: 50px;
+font-size: 1.1em;
+float: right;
+margin: 10px;
+}
+
+.multi-column-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-style: solid;
   border-color: black;
   margin: 10px;
+}
+
+.upper_form{
+  flex-direction: column;
+    margin: 0 auto;
+}
+
+.form-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 /* End Register Page */
@@ -445,9 +531,18 @@ div.private_policy{
   height: 35px;
   overflow:hidden;
 	border:1px solid #EF672D;
+  margin: 20px;
 }
+
+#cont {
+    height: auto;
+    overflow:hidden;
+}
+
+
 .bigdesc {
   height: auto;
+  margin: 20px;
 }
 
 .schedule_box p{
@@ -614,6 +709,42 @@ div.private_policy{
 h1{
   font-size: 60px;
 }
+
+h2{
+  font-size: 38px;
+}
+
+/* Index Page */
+
+.MainContent p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  width: 324px;
+
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.MainContent h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainContent img{
+  height: 250px;
+  width: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   margin-top: 50px;
+}
+
+/* End Index Page */
 /* Speaker Page */
 
 .speaker_headshot img{
