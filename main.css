@@ -102,137 +102,62 @@ textarea {
    ========================================================================== */
 
    header{
-   justify-content: space-around;
- }
- <style>
- body {
- margin: 0;
- font-family: 'Nunito Sans', sans-serif !important;
- background-color: ##012038;
- }
+     justify-content: space-around;
+   }
 
- a {
- color: #fff;
- font-size: 25px;
- }
+   .main_nav{
+        background-color: #012038;
+        width: 100%;
+       height:100px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+      }
 
- /* header */
+      #MainNav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90vw;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+        font-size: 26px;
+        color: #fff;
+      }
 
- .header {
- background-color: #012038;
- box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
- position: fixed;
- width: 100%;
- z-index: 3;
- }
+      #MainNav ul{
+        display: flex;
+        padding: 15px;
+        list-style-type: none;
+      }
 
- .header ul {
- margin: 0;
- padding: 0;
- list-style: none;
- overflow: hidden;
- background-color: #012038;
- }
+      #MainNav ul li{
+        padding: 15px;
+      }
 
- .header li a {
- display: block;
- padding: 20px 20px;
- border-right: 1px solid #012038;
- text-decoration: none;
- }
+      #MainNav ul li a{
+        color: #fff;
+        text-decoration: none;
+      }
 
- .header li a:hover,
- .header .menu-btn:hover {
- -webkit-transform: scale(1.01);
-       -ms-transform: scale(1.01);
-       transform: scale(1.01);
-       box-shadow: inset 0 0 20px 0px orange;
-       transition-duration: 2s;
- }
+      #MainNav ul li a:visited{
+        color: #fff;
+      }
 
- .header .logo {
- display: block;
- float: left;
- font-size: 2em !important;
- padding: 10px 20px;
- text-decoration: none;
- }
+      #MainNav ul li a:hover{
+        text-decoration: underline;
+      }
 
- /* menu */
-
- .header .menu {
- clear: both;
- max-height: 0;
- transition: max-height .2s ease-out;
- }
-
- /* menu icon */
-
- .header .menu-icon {
- cursor: pointer;
- display: inline-block;
- float: right;
- padding: 28px 20px;
- position: relative;
- user-select: none;
- }
-
- .header .menu-icon .navicon {
- background: #fff;
- display: block;
- height: 2px;
- position: relative;
- transition: background .2s ease-out;
- width: 23px;
- top:6px;
- }
-
- .header .menu-icon .navicon:before,
- .header .menu-icon .navicon:after {
- background:#fff;
- content: '';
- display: block;
- height: 100%;
- position: absolute;
- transition: all .2s ease-out;
- width: 100%;
- }
-
- .header .menu-icon .navicon:before {
- top: 5px;
- }
-
- .header .menu-icon .navicon:after {
- top: -5px;
- }
-
- /* menu btn */
-
- .header .menu-btn {
- display: none;
- }
-
- .header .menu-btn:checked ~ .menu {
- max-height: 740px;
- text-align: center;
- }
-
- .header .menu-btn:checked ~ .menu-icon .navicon {
- background: transparent;
- }
-
- .header .menu-btn:checked ~ .menu-icon .navicon:before {
- transform: rotate(-45deg);
- }
-
- .header .menu-btn:checked ~ .menu-icon .navicon:after {
- transform: rotate(45deg);
- }
-
- .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
- .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
- top: 0;
- }
+      .button {
+        background-color: #EF672D;
+        border-radius: 25px;
+        padding: 5px 15px;
+        border: none;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+      }
 
 
 
@@ -569,6 +494,34 @@ margin: 10px;
 }
 
 /* End Register Page */
+/* Schedule Page Collapsible Divs */
+
+.container {
+  width:50%;
+  border: 1px solid #EF672D;
+  margin: 1%;
+}
+.container div {
+  width:100%;
+  position: relative;
+}
+.container .header {
+  background-color: #fff;
+  padding: 2px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.container .content {
+  display: none;
+  padding : 5px;
+}
+/* End Collapsible Divs */
+
 /* Schedule Page */
 
 .schedule_days{
@@ -667,11 +620,10 @@ margin: 10px;
 
 .chevron{
   position: relative;
-  right: -30px;
 }
 
 .chevron img{
-  width: 42%;
+  width: 30px;
 }
 
 
@@ -714,8 +666,55 @@ color:red;
 }
 
 
+/* Off Canvas Navigation */
 
+    .hamburger{
+      display: none;
+    }
 
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #fff;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
 
 
 
@@ -820,32 +819,27 @@ color:red;
 
    /* 48em = 768px */
 
-   @media (min-width: 910px) {
-   .header li {
-     float: left;
-   }
-
-   .header .menu {
-     color:#fff;
-     clear: none;
-     float: right;
-     max-height: none;
-   }
-   .header .menu-icon {
-     display: none;
-   }
-   }
 
    @media screen and (max-width: 768px) {
        /* Style adjustments for viewports that meet the condition */
 
-       .main_nav {
-   width:100%;
- }
- .page_indicator {
-   width:100%;
-   float:none;
- }
+       h1{
+       font-size: 60px;
+     }
+     /* Speaker Page */
+
+     .speaker_headshot img{
+       width: 207px;
+       height: 207px;
+     }
+
+     #MainNav ul{
+       display: none;
+     }
+     .hamburger{
+       position: relative;
+       display: inline;
+     }
 
 h1{
   font-size: 60px;

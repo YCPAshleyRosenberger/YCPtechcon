@@ -22,20 +22,33 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <header class="header">
-      <a href="index.html"><img src="img/dev-con-logo.png" width="55" height="55" class="logo"></a>
-      </a>
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="speakers.html">Speakers</a></li>
-        <li><a href="sponsors.html">Sponsors</a></li>
-        <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="legal.html">Legal</a></li>
-        <li><a href="register.html">Register</a></li>
-      </ul>
-    </header>
+  <header>
+      <div class="main_nav">
+        <div id="MainNav">
+          <div><a href="index.html"><img src="img/dev-con-logo.png" alt="logo" width="80" height="80">
+          </a></div>
+          <ul>
+            <li class="page_indicator"><a href="index.html">Home</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="Sponsors.html">Sponsors</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="legal.html">Legal</a></li>
+            <li><button class="button"><a href="register.html">Register</a></button></li>
+          </ul>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="hamburger">&#9776;</span>
+        </div>
+      </div>
+      </header>
+
+      <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <li class="page_indicator"><a href="index.html">Home</a></li>
+          <a href="speakers.html">Speakers</a>
+          <a href="Sponsors.html">Sponsors</a>
+          <a href="schedule.html">Schedule</a>
+          <a href="legal.html">Legal</a>
+          <a href="register.html">Register</a>
+        </div>
 
   <section class="HeroSection">
 
@@ -66,18 +79,25 @@ Technical Co-Founder</h2>
 
 
 
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+<script>
+$(".header").click(function () {
+
+  $header = $(this);
+  //getting the next element
+  $content = $header.next();
+  //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+  $content.slideToggle(500, function () {
+      //execute this after slideToggle is done
+      //change text of header based on visibility of content div
+  });
+
+});
+</script>
 </body>
 
 </html>

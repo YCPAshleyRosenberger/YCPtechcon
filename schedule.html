@@ -22,21 +22,34 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <header class="header">
-      <a href="index.html"><img src="img/dev-con-logo.png" width="55" height="55" class="logo"></a>
-      </a>
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="speakers.html">Speakers</a></li>
-        <li><a href="sponsors.html">Sponsors</a></li>
-        <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="legal.html">Legal</a></li>
-        <li><a href="register.html">Register</a></li>
-      </ul>
-    </header>
-    
+  <header>
+      <div class="main_nav">
+        <div id="MainNav">
+          <div><a href="index.html"><img src="img/dev-con-logo.png" alt="logo" width="80" height="80">
+          </a></div>
+          <ul>
+            <li class="page_indicator"><a href="index.html">Home</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="Sponsors.html">Sponsors</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="legal.html">Legal</a></li>
+            <li><button class="button"><a href="register.html">Register</a></button></li>
+          </ul>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="hamburger">&#9776;</span>
+        </div>
+      </div>
+      </header>
+
+      <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <li class="page_indicator"><a href="index.html">Home</a></li>
+          <a href="speakers.html">Speakers</a>
+          <a href="Sponsors.html">Sponsors</a>
+          <a href="schedule.html">Schedule</a>
+          <a href="legal.html">Legal</a>
+          <a href="register.html">Register</a>
+        </div>
+
   <section class="HeroSection">
 
   </section>
@@ -57,117 +70,118 @@
 <section class="center_schedule">
 
 
-  <div class="schedule_box smalldesc cont">
-    <div>
-    <h3>7am - 8am</h3>
-    <p>Registration & Breakfast<br/>Location: Lobby</p>
+  <div class="container">
+    <div class="header">
+      <span>7am - 8am </span>
+      <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
     </div>
-    <div class="chevron" id="button">
-      <img src="img/arrow.png" alt="arrow">
+    <div class="content">
+      <p>Registration & Breakfast<br/>Location: Lobby</p>
     </div>
   </div>
 
-  <div class="schedule_box smalldesc">
-  <div>
-    <h3>8am - 8:30am</h3>
-    <p>Kickoff Speech<br/>Speaker: Chuck Russel - Organizer <br/> Location: Grand Ballroom</p>
-  </div>
-  <div class="chevron">
-    <img src="img/arrow.png" alt="arrow">
-  </div>
-  </div>
+  <div class="container">
+      <div class="header">
+        <span>8am - 8:30am </span>
+        <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+      </div>
+      <div class="content">
+          <p>Kickoff Speech<br/>Speaker: Chuck Russel - Organizer <br/> Location: Grand Ballroom</p>
+      </div>
+    </div>
 
-  <div class="schedule_box smalldesc">
-    <div>
-    <h3>8:45am - 9:30am</h3>
-    <p>Augmented Reality in a Fracture Reality <br/> Speaker: Dave Alpert <br/> Location: Ballroom A</p><br/>
-    <p>Digital Experiences On-Demand <br/> Speaker: Leemay Nassery <br/> Location: Ballroom B</p><br/>
-    <p>Ruby On Rails Migration <br/> Speaker: Renaud Visage <br/> Location: Ballroom C</p>
-  </div>
-  <div class="chevron">
-    <img src="img/arrow.png" alt="arrow">
-  </div>
-  </div>
+    <div class="container">
+        <div class="header">
+          <span>8:45am - 9:30am </span>
+          <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+        </div>
+        <div class="content">
+            <p>Augmented Reality in a Fracture Reality <br/> Speaker: Dave Alpert <br/> Location: Ballroom A</p><br/>
+            <p>Digital Experiences On-Demand <br/> Speaker: Leemay Nassery <br/> Location: Ballroom B</p><br/>
+            <p>Ruby On Rails Migration <br/> Speaker: Renaud Visage <br/> Location: Ballroom C</p>
+        </div>
+      </div>
 
-  <div class="schedule_box smalldesc">
-    <div>
-    <h3>9:45am - 10:30am</h3>
-    <p>SmartThings - An Origin Story <br/> Speaker: Jeff Beck <br/> Location: Ballroom A</p><br/>
-    <p>Beginning Angular 2.0 <br/> Speaker: Romain Guy <br/> Location: Ballroom B</p><br/>
-    <p>Continuous Development Pipeline Considerations <br/> Speaker: Tricia Katz <br/> Location: Ballroom C</p>
-  </div>
-  <div class="chevron">
-    <img src="img/arrow.png" alt="arrow">
-  </div>
-  </div>
+      <div class="container">
+          <div class="header">
+            <span>9:45am - 10:30am </span>
+            <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+          </div>
+          <div class="content">
+              <p>SmartThings - An Origin Story <br/> Speaker: Jeff Beck <br/> Location: Ballroom A</p><br/>
+              <p>Beginning Angular 2.0 <br/> Speaker: Romain Guy <br/> Location: Ballroom B</p><br/>
+              <p>Continuous Development Pipeline Considerations <br/> Speaker: Tricia Katz <br/> Location: Ballroom C</p>
+          </div>
+        </div>
 
-  <div class="schedule_box smalldesc">
-    <div>
-    <h3>10:45am - 11:30am</h3>
-    <p>Social Data Algorithims <br/> Speaker: Phil Nash <br/> Location: Ballroom A</p><br/>
-    <p>Blockchain - From out of the Dark Web to Civic Engagement <br/> Speaker: Marie Leaf <br/> Location: Ballroom B</p><br/>
-    <p>Adobe Experience Manager Primer <br/> Speaker: Elisha Dvorak <br/> Location: Ballroom C</p>
-  </div>
-  <div class="chevron">
-    <img src="img/arrow.png" alt="arrow">
-  </div>
-  </div>
+        <div class="container">
+            <div class="header">
+              <span>10:45am - 11:30am </span>
+              <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+            </div>
+            <div class="content">
+                <p>Social Data Algorithims <br/> Speaker: Phil Nash <br/> Location: Ballroom A</p><br/>
+                <p>Blockchain - From out of the Dark Web to Civic Engagement <br/> Speaker: Marie Leaf <br/> Location: Ballroom B</p><br/>
+                <p>Adobe Experience Manager Primer <br/> Speaker: Elisha Dvorak <br/> Location: Ballroom C</p>
+            </div>
+          </div>
 
-  <div class="schedule_box smalldesc">
-    <div>
-    <h3>11:45am - 1:15pm</h3>
-    <p>Lunch <br/> Location: Grand Ballroom</p>
-  </div>
-  <div class="chevron">
-    <img src="img/arrow.png" alt="arrow">
-  </div>
-  </div>
+          <div class="container">
+              <div class="header">
+                <span>11:45am - 1:15pm </span>
+                <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+              </div>
+              <div class="content">
+                  <p>Lunch <br/> Location: Grand Ballroom</p>
+              </div>
+            </div>
 
-  <div class="schedule_box smalldesc">
-    <div>
-    <h3>1:30pm - 2:15pm</h3>
-    <p>Linux and IIS <br/> Speaker: E.G Nadhan <br/> Location: Ballroom A</p><br/>
-    <p>Digital Media Experiences <br/> Speaker: Dana White <br/> Location: Ballroom B</p><br/>
-    <p>Meaningful Digital Communication <br/> Speaker: Cal Henderson <br/> Location: Ballroom C</p>
-  </div>
-  <div class="chevron">
-    <img src="img/arrow.png" alt="arrow">
-  </div>
-  </div>
+            <div class="container">
+                <div class="header">
+                  <span>1:30pm - 2:15pm</span>
+                  <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+                </div>
+                <div class="content">
+                    <p>Linux and IIS <br/> Speaker: E.G Nadhan <br/> Location: Ballroom A</p><br/>
+                    <p>Digital Media Experiences <br/> Speaker: Dana White <br/> Location: Ballroom B</p><br/>
+                    <p>Meaningful Digital Communication <br/> Speaker: Cal Henderson <br/> Location: Ballroom C</p>
+                </div>
+              </div>
 
-  <div class="schedule_box smalldesc">
-    <div>
-    <h3>2:30pm - 3:15pm</h3>
-    <p>Ember.js vs Electron - A Breakdown <br/> Speaker: Melanie Sumner <br/> Location: Ballroom A</p><br/>
-    <p>Google Analytics in the age of Privacy <br/> Speaker: Harry Roberts <br/> Location: Ballroom B</p><br/>
-    <p>Brining Military Discipline into the Agile Environment <br/> Speaker: Rebecca Fitzhuh <br/> Location: Ballroom C</p>
-  </div>
-  <div class="chevron">
-    <img src="img/arrow.png" alt="arrow">
-  </div>
-  </div>
+              <div class="container">
+                  <div class="header">
+                    <span>2:30pm - 3:15pm </span>
+                    <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+                  </div>
+                  <div class="content">
+                      <p>Ember.js vs Electron - A Breakdown <br/> Speaker: Melanie Sumner <br/> Location: Ballroom A</p><br/>
+                      <p>Google Analytics in the age of Privacy <br/> Speaker: Harry Roberts <br/> Location: Ballroom B</p><br/>
+                      <p>Brining Military Discipline into the Agile Environment <br/> Speaker: Rebecca Fitzhuh <br/> Location: Ballroom C</p>
+                  </div>
+                </div>
 
-  <div class="schedule_box smalldesc">
-    <div>
-    <h3>3:30pm - 4:15pm</h3>
-    <p>Python Foundations <br/> Speaker: Matt Layman <br/> Location: Ballroom A</p><br/>
-    <p>Online Payments that Don't Suck <br/> Speaker: Rohit Basu <br/> Location: Ballroom B</p><br/>
-    <p>OpenID Foundation Pursuits <br/> Speaker: Sarah Squire <br/> Location: Ballroom C</p>
-  </div>
-  <div class="chevron">
-    <img src="img/arrow.png" alt="arrow">
-  </div>
-  </div>
+                <div class="container">
+                    <div class="header">
+                      <span>3:30pm - 4:15pm </span>
+                      <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+                    </div>
+                    <div class="content">
+                        <p>Python Foundations <br/> Speaker: Matt Layman <br/> Location: Ballroom A</p><br/>
+                        <p>Online Payments that Don't Suck <br/> Speaker: Rohit Basu <br/> Location: Ballroom B</p><br/>
+                        <p>OpenID Foundation Pursuits <br/> Speaker: Sarah Squire <br/> Location: Ballroom C</p>
+                    </div>
+                  </div>
 
-  <div class="schedule_box smalldesc">
-    <div>
-    <h3>4:30pm - on</h3>
-    <p>Technology Lounge - Bar and Lounge <br/> Location: First Two Floors of the Hotel</p>
-  </div>
-  <div class="chevron">
-    <img src="img/arrow.png" alt="arrow">
-  </div>
-  </div>
+
+                  <div class="container">
+                      <div class="header">
+                        <span>4:30pm - on </span>
+                        <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+                      </div>
+                      <div class="content">
+                          <p>Technology Lounge - Bar and Lounge <br/> Location: First Two Floors of the Hotel</p>
+                      </div>
+                    </div>
 
 </section>
 
@@ -175,199 +189,200 @@
 
 <section class="center_schedule click1">
 
-<div class="schedule_box smalldesc">
-  <div>
-  <h3>7am - 8am</h3>
-  <p>Registration & Breakfast <br/>Location: Lobby</p>
-</div>
-<div class="chevron">
-  <img src="img/arrow.png" alt="arrow">
-</div>
-</div>
+    <div class="container">
+        <div class="header">
+          <span>7am - 8am </span>
+          <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+        </div>
+        <div class="content">
+          <p>Registration & Breakfast<br/>Location: Lobby</p>
+        </div>
+      </div>
 
-<div class="schedule_box smalldesc">
-  <div>
-  <h3>8am - 8:30am</h3>
-  <p>Day Highlights <br/> Speaker: Chuck Russel - Organizer <br/> Location: Grand Ballroom</p>
-</div>
-<div class="chevron">
-  <img src="img/arrow.png" alt="arrow">
-</div>
-</div>
+      <div class="container">
+          <div class="header">
+            <span>8am - 8:30am </span>
+            <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+          </div>
+          <div class="content">
+              <p>Day Highlights <br/> Speaker: Chuck Russel - Organizer <br/> Location: Grand Ballroom</p>
+          </div>
+        </div>
 
-<div class="schedule_box smalldesc">
-  <div>
-  <h3>8:45am - 9:30am</h3>
-  <p>Advanced SCSS <br/> Speaker: Sarah Drasner <br/> Location: Ballroom A</p><br/>
-  <p>Authentication Systems and Tokens <br/> Speaker: Michael Albers <br/> Location: Ballroom B</p><br/>
-  <p>Customer Experience at the Gallery <br/> Speaker: Ryan King <br/> Location: Ballroom C</p>
-</div>
-<div class="chevron">
-  <img src="img/arrow.png" alt="arrow">
-</div>
-</div>
+        <div class="container">
+            <div class="header">
+              <span>8:45am - 9:30am </span>
+              <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+            </div>
+            <div class="content">
+                <p>Advanced SCSS <br/> Speaker: Sarah Drasner <br/> Location: Ballroom A</p><br/>
+                <p>Authentication Systems and Tokens <br/> Speaker: Michael Albers <br/> Location: Ballroom B</p><br/>
+                <p>Customer Experience at the Gallery <br/> Speaker: Ryan King <br/> Location: Ballroom C</p>
+            </div>
+          </div>
 
-<div class="schedule_box smalldesc">
-  <div>
-  <h3>9:45am - 11am</h3>
-  <p>Panel Discussion: Venture Capital in Transformative Technology <br/> Panel Moderator: Allison Lowery <br/>
-Panelist: Phil Nash<br/>
-Panelist: Harry Roberts<br/>
-Panelist: Melanie Sumner<br/>
-Panelist: Rohit Basu <br/> Location: Grand Ballroom</p>
-</div>
-<div class="chevron">
-  <img src="img/arrow.png" alt="arrow">
-</div>
-</div>
+          <div class="container">
+              <div class="header">
+                <span>9:45am - 11am </span>
+                <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+              </div>
+              <div class="content">
+                  <p>Panel Discussion: Venture Capital in Transformative Technology <br/> Panel Moderator: Allison Lowery <br/>
+                    Panelist: Phil Nash<br/>
+                    Panelist: Harry Roberts<br/>
+                    Panelist: Melanie Sumner<br/>
+                    Panelist: Rohit Basu <br/> Location: Grand Ballroom</p>
+              </div>
+            </div>
 
-<div class="schedule_box smalldesc">
-  <div>
-  <h3>11:15am - Noon</h3>
-  <p>Sponsor Presentations <br/> Speaker: Sponsor Hall <br/> Location: Lobby</p>
-</div>
-<div class="chevron">
-  <img src="img/arrow.png" alt="arrow">
-</div>
-</div>
+            <div class="container">
+                <div class="header">
+                  <span>11:15am - Noon </span>
+                  <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+                </div>
+                <div class="content">
+                    <p>Sponsor Presentations <br/> Speaker: Sponsor Hall <br/> Location: Lobby</p>
+                </div>
+              </div>
 
-<div class="schedule_box smalldesc">
-  <div>
-  <h3>Noon - 1:15pm</h3>
-  <p>Lunch <br/> Location: Grand Ballroom</p>
-</div>
-  <div class="chevron">
-    <img src="img/arrow.png" alt="arrow">
-  </div>
-</div>
+              <div class="container">
+                  <div class="header">
+                    <span>Noon - 1:15pm </span>
+                    <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+                  </div>
+                  <div class="content">
+                      <p>Lunch <br/> Location: Grand Ballroom</p>
+                  </div>
+                </div>
 
-<div class="schedule_box smalldesc">
-  <div>
-  <h3>1:30pm - 2:15pm</h3>
-  <p>Modern Fullstack Workflow <br/> Speaker: Leemay Nassery <br/> Location: Ballroom A</p><br/>
-  <p>Educating the Future of Technology <br/> Speaker: Marie Leaf <br/> Location: Ballroom B</p><br/>
-  <p>Geo-Services Powering Everything <br/> Speaker: Dave Alpert <br/> Location: Ballroom C</p>
-</div>
-<div class="chevron">
-  <img src="img/arrow.png" alt="arrow">
-</div>
-</div>
+                <div class="container">
+                    <div class="header">
+                      <span>1:30pm - 2:15pm</span>
+                      <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+                    </div>
+                    <div class="content">
+                        <p>Modern Fullstack Workflow <br/> Speaker: Leemay Nassery <br/> Location: Ballroom A</p><br/>
+                        <p>Educating the Future of Technology <br/> Speaker: Marie Leaf <br/> Location: Ballroom B</p><br/>
+                        <p>Geo-Services Powering Everything <br/> Speaker: Dave Alpert <br/> Location: Ballroom C</p>
+                    </div>
+                  </div>
 
-<div class="schedule_box smalldesc">
-  <div>
-  <h3>2:30pm - 3:45pm</h3>
-  <p>Modern User Interfaces <br/> Panel Moderator: David Hickthier <br/>
-Panelist: Brad Frost<br/>
-Panelist Sarah Drasner<br/>
-Panelist: Romain Guy<br/> Location: Grand Ballroom</p>
-</div>
-<div class="chevron">
-  <img src="img/arrow.png" alt="arrow">
-</div>
-</div>
+                  <div class="container">
+                      <div class="header">
+                        <span>2:30pm - 3:45pm </span>
+                        <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+                      </div>
+                      <div class="content">
+                          <p>Modern User Interfaces <br/> Panel Moderator: David Hickthier <br/>
+                            Panelist: Brad Frost<br/>
+                            Panelist Sarah Drasner<br/>
+                            Panelist: Romain Guy<br/> Location: Grand Ballroom</p>
+                      </div>
+                    </div>
 
-<div class="schedule_box smalldesc">
-  <div>
-  <h3>4pm - 4:30pm</h3>
-  <p>Sponsor Presentations <br/> Speaker: Sponsor Hall <br/> Location: Lobby</p>
-</div>
-<div class="chevron">
-  <img src="img/arrow.png" alt="arrow">
-</div>
-</div>
+                    <div class="container">
+                        <div class="header">
+                          <span>4pm - 4:30pm </span>
+                          <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+                        </div>
+                        <div class="content">
+                            <p>Sponsor Presentations <br/> Speaker: Sponsor Hall <br/> Location: Lobby</p>
+                        </div>
+                      </div>
 
-<div class="schedule_box smalldesc">
-  <div>
-  <h3>4:30pm - On</h3>
-  <p>Harrisburg Senators Ballpark After Parth <br/> Location: City Island</p>
-</div>
-<div class="chevron">
-  <img src="img/arrow.png" alt="arrow">
-</div>
-</div>
-</section>
+
+                      <div class="container">
+                          <div class="header">
+                            <span>4:30pm - on </span>
+                            <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+                          </div>
+                          <div class="content">
+                              Harrisburg Senators Ballpark After Parth <br/> Location: City Island<
+                          </div>
+                        </div>
+
+                      </section>
 
 <h2 id="day3">Day 3</h2>
 
 <section class="center_schedule click1">
 
-<div class="schedule_box smalldesc">
-  <div>
-  <h3>7am - 8am</h3>
-  <p>Registration & Breakfast <br/>Location: Lobby</p>
-</div>
-<div class="chevron">
-  <img src="img/arrow.png" alt="arrow">
-</div>
-</div>
+    <div class="container">
+        <div class="header">
+          <span>7am - 8am </span>
+          <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+        </div>
+        <div class="content">
+          <p>Registration & Breakfast<br/>Location: Lobby</p>
+        </div>
+      </div>
 
-<div class="schedule_box smalldesc">
-  <div>
-  <h3>8am - 8:30am</h3>
-  <p>Kickoff Speech <br/> Speaker: Chuck Russel - Organizer <br/> Location: Grand Ballroom</p>
-</div>
-<div class="chevron">
-  <img src="img/arrow.png" alt="arrow">
-</div>
-</div>
+      <div class="container">
+          <div class="header">
+            <span>8am - 8:30am </span>
+            <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+          </div>
+          <div class="content">
+              <p>Kickoff Speech <br/> Speaker: Chuck Russel - Organizer <br/> Location: Grand Ballroom</p>
+          </div>
+        </div>
 
-<div class="schedule_box smalldesc">
-  <div>
-  <h3>8:45am - 9:30am</h3>
-  <p>eLearning and Content Design <br/> Speaker: Elisha Dvorak <br/> Location: Ballroom A</p><br/>
-  <p>Scaling a Business Exponentially <br/> Speaker: Cal Henderson <br/> Location: Ballroom B</p><br/>
-  <p>Authenticaing Security Tokens <br/> Speaker: Marie Leaf <br/> Location: Ballroom C</p>
-</div>
-<div class="chevron">
-  <img src="img/arrow.png" alt="arrow">
-</div>
-</div>
+        <div class="container">
+            <div class="header">
+              <span>8:45am - 9:30am </span>
+              <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+            </div>
+            <div class="content">
+                <p>eLearning and Content Design <br/> Speaker: Elisha Dvorak <br/> Location: Ballroom A</p><br/>
+                <p>Scaling a Business Exponentially <br/> Speaker: Cal Henderson <br/> Location: Ballroom B</p><br/>
+                <p>Authenticaing Security Tokens <br/> Speaker: Marie Leaf <br/> Location: Ballroom C</p>
+            </div>
+          </div>
 
-<div class="schedule_box smalldesc">
-  <div>
-  <h3>9:45am - 10:30am</h3>
-  <p>VUI integrations in your CX <br/> Speaker: Tricia Katz <br/> Location: Ballroom A</p><br/>
-  <p>Digital Childhood Frontier <br/> Speaker: Matt Layman <br/> Location: Ballroom B</p><br/>
-  <p>Headless CMS <br/> Speaker: Dana White <br/> Location: Ballroom C</p>
-</div>
-<div class="chevron">
-  <img src="img/arrow.png" alt="arrow">
-</div>
-</div>
+          <div class="container">
+              <div class="header">
+                <span>9:45am - 10:30am </span>
+                <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+              </div>
+              <div class="content">
+                  <p>VUI integrations in your CX <br/> Speaker: Tricia Katz <br/> Location: Ballroom A</p><br/>
+                  <p>Digital Childhood Frontier <br/> Speaker: Matt Layman <br/> Location: Ballroom B</p><br/>
+                  <p>Headless CMS <br/> Speaker: Dana White <br/> Location: Ballroom C</p>
+              </div>
+            </div>
 
+            <div class="container">
+                <div class="header">
+                  <span>10:45am - 11:30am </span>
+                  <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+                </div>
+                <div class="content">
+                    <p>Open Source in Enterprise <br/> Speaker: E.G. Nadhan <br/> Location: Ballroom A</p><br/>
+                    <p>Open API's <br/> Speaker: Renuad Visage <br/> Location: Ballroom B</p><br/>
+                    <p>Data Processing and Synergy <br/> Speaker: Ryan King<br/> Location: Ballroom C</p>
+                </div>
+              </div>
 
-<div class="schedule_box smalldesc">
-  <div>
-  <h3>10:45am - 11:30am</h3>
-  <p>Open Source in Enterprise <br/> Speaker: E.G. Nadhan <br/> Location: Ballroom A</p><br/>
-  <p>Open API's <br/> Speaker: Renuad Visage <br/> Location: Ballroom B</p><br/>
-  <p>Data Processing and Synergy <br/> Speaker: Ryan King<br/> Location: Ballroom C</p>
-</div>
-<div class="chevron">
-  <img src="img/arrow.png" alt="arrow">
-</div>
-</div>
+              <div class="container">
+                  <div class="header">
+                    <span>11:45am - 1:15pm </span>
+                    <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+                  </div>
+                  <div class="content">
+                      <p>Lunch <br/> Location: Grand Ballroom</p>
+                  </div>
+                </div>
 
-<div class="schedule_box smalldesc">
-  <div>
-  <h3>11:45am - 1:15pm</h3>
-  <p>Lunch <br/> Location: Grand Ballroom</p>
-</div>
-<div class="chevron">
-  <img src="img/arrow.png" alt="arrow">
-</div>
-</div>
-
-<div class="schedule_box smalldesc">
-  <div>
-  <h3>1:30pm - 2pm</h3>
-  <p>Final Comments <br/> Speaker: Chuck Russel - Organizer <br/> Location: Grand Ballroom</p>
-</div>
-<div class="chevron">
-  <img src="img/arrow.png" alt="arrow">
-</div>
-</div>
-</section>
+                <div class="container">
+                    <div class="header">
+                      <span>1:30pm - 2pm</span>
+                      <span class="chevron"><img src="img/arrow.png" alt="arrow"></span>
+                    </div>
+                    <div class="content">
+                        <p>Final Comments <br/> Speaker: Chuck Russel - Organizer <br/> Location: Grand Ballroom</p>
+                    </div>
+                  </div>
+                  </section>
 
   <footer>
 
@@ -387,13 +402,20 @@ Panelist: Romain Guy<br/> Location: Grand Ballroom</p>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
-  $('#button').click(function(){
-      $('#cont').animate({height:'125px'}, 500);
-  });
+$(".header").click(function () {
 
-  </script>
+    $header = $(this);
+    //getting the next element
+    $content = $header.next();
+    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+    $content.slideToggle(500, function () {
+        //execute this after slideToggle is done
+        //change text of header based on visibility of content div
+    });
+
+});
+</script>
 </body>
 
 </html>
